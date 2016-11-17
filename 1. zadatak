@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+// Napisati program koji ucitava dvocifreni broj i ispisuje
+// proizvod cifara i kolicnik prve i druge cifre.
+
+int main() {
+	int broj;
+	int proizvodCifara = 0;
+	double kolicnikCifara = 0;
+	int pomocna1 = 0;
+	int pomocna2 = 0;
+
+	cout << "Unesite dvocifreni broj: " << endl;
+	cin >> broj;
+
+	if (broj >= 10 && broj <= 99) {
+		pomocna1 = broj / 10;
+		pomocna2 = broj % 10;
+
+		proizvodCifara = pomocna1 * pomocna2;
+		kolicnikCifara = pomocna1 / pomocna2;
+
+		cout << "Proizvod cifara unesenog dvocifrenog broja iznosi: " << proizvodCifara << endl;
+		cout << "Kolicnik prve i druge cifre unesenog dvocifrenog broja iznosi: " << kolicnikCifara << endl;
+	}
+	else
+		cout << "Uneseni broj nije dvocifren!" << endl;
+
+	return 0;
+	system("pause=0");
+}
