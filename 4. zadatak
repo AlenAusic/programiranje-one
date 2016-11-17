@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+// Napisati program koji vrijeme ucitano u satima, minutama i
+// sekundama izracunava i ispisuje u sekundama.
+
+int main() {
+	int sati, minute, sekunde;
+	int satiSekunde = 0;
+	int minuteSekunde = 0;
+	int ukupnoSekundi = 0;
+
+	cout << "Unesite vrijeme u sljedecem formatu:" << endl;
+	cout << "sati minute sekunde, na primjer:" << endl;
+	cout << "22 15 48" << endl;
+	cin >> sati >> minute >> sekunde;
+
+	if ((sati >= 0 && sati <= 23) && (minute >= 0 && minute <= 59) && (sekunde >= 0 && sekunde <= 60)) {
+		satiSekunde = sati * 3600;
+		minuteSekunde = minute * 60;
+
+		ukupnoSekundi = satiSekunde + minuteSekunde + sekunde;
+
+		cout << "Ukupno sekundi: " << ukupnoSekundi << endl;
+
+	}
+	else
+		cout << "Niste unijeli podatke o vremenu u prihvatljivom formatu!" << endl;
+
+	return 0;
+	system("pause=0");
+}
