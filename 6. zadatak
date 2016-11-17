@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+// Napisati program za izracunavanje godisnje kamate (ili PDV).
+
+int main() {
+	double suma, kamata;
+
+	cout << "Unesite odredjenu sumu novca: " << endl;
+	cin >> suma;
+
+	kamata = suma * 0.17;
+	cout << "Godisnja kamata (PDV) na ovaj iznos je: " << kamata << endl;
+
+	return 0;
+	system("pause=0");
+}
