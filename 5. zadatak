@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Napisati program za izracunavanje predjenog puta (s)
+// pri jednolikom ubrzanom kretanju ( s=v0t + at2/2 ).
+
+int main() {
+	int a, v, t;
+	double s = 0;
+
+	cout << "Unesite a: " << endl;
+	cin >> a;
+	cout << "Unesite v: " << endl;
+	cin >> v;
+	cout << "Unesite t: " << endl;
+	cin >> t;
+
+	s = v * t + a * pow(t, 2) / 2;
+	
+	cout << "Predjeni put (s) iznosi: " << s << endl;
+
+	return 0;
+	system("pause=0");
+}
