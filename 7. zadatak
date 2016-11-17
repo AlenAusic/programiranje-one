@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+// U banci imate odredjenu sumu novca. Godisnja kamata je 17%.
+// Pod predpostavkom da nista ne podižete u banci, koliko cete
+// novca imati nakon tri godine.
+
+int main() {
+	double suma, kamata, kamataTri;
+
+	cout << "Unesite odredjenu sumu novca: " << endl;
+	cin >> suma;
+
+	kamata = suma * 0.17;
+	kamataTri = kamata * 3;
+
+	cout << "Godisnja kamata (PDV) na ovaj iznos je: " << kamata << endl;
+	cout << "Ukoliko ne budete podizali novac sa racuna sljedece tri godine, suma ce iznositi: " << suma * 3 + kamataTri << endl;
+
+	return 0;
+	system("pause=0");
+}
