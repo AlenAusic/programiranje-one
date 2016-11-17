@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+// Koliko treba dodati primjese u tecnost zapremine V
+// da se sa 2% poveca na 5%.
+
+int main() {
+	double u1, u2, V, x;
+	
+	cout << "Zapremina smjese udjela 2% je: ";
+	cin >> V;
+	u1 = 0.02;
+	u2 = 0.05;
+
+	x = ((u2 - u1) / (1 - u2)) * V;
+	
+	cout << "Da bi postao 5% potrebno je dodati primjese: " << x << endl;
+	
+	return 0;
+	system("pause=0");
+}
