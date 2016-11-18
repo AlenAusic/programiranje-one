@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Napisati program za izvrsavanje sljedeceg izraza:
+// y = sqrt(2 + 3 * x * b * c - 4 * pow(x, 2))
+
+int main() {
+	int x, b, c;
+	double y = 0;
+
+	cout << "Unesite x: " << endl;
+	cin >> x;
+	cout << "Unesite b: " << endl;
+	cin >> b;
+	cout << "Unesite c: " << endl;
+	cin >> c;
+
+	y = sqrt(2 + 3 * x * b * c - 4 * pow(x, 2));
+
+	cout << "Rjesenje zadatka: " << y << endl;
+
+	
+	return 0;
+	system("pause=0");
+}
