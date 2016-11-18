@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Napisati program koji ce ispisati sve cetveroznamenkaste 
+// brojeve kojima su: sve znamenke neparne i ne sadrzi znamenku 0.
+
+int main() {
+	bool provjera;
+	int pomocna;
+
+	for (int i = 1000; i <= 9999; i++) {
+
+		kopija = i;
+		provjera = true;
+		while (pomocna > 0)
+		{
+			if (pomocna % 10 % 2 != 0 || pomocna % 10 == 0)
+				provjera = false;
+			kopija /= 10;
+		}
+
+		if (provjera)
+			cout << i << endl;
+
+	}
+
+
+	
+	return 0;
+	system("pause=0");
+}
