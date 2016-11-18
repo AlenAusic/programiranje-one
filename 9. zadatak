@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Napisati program koji provjerava da li je upisani broj
+// pozitivan, negativan ili nula - i to ispise.
+
+int main() {
+	int a;
+
+	cout << "Unesite broj: " << endl;
+	cin >> a;
+
+	if (a < 0)
+		cout << "Uneseni broj je negativan!" << endl;
+	else if (a > 0)
+		cout << "Uneseni broj je pozitivan!" << endl;
+	else
+		cout << "Uneseni broj je nula!" << endl;
+	
+	
+	return 0;
+	system("pause=0");
+}
