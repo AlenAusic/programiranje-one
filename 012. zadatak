@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Napisati koji omogucava unos prirodnog broja n preko tastature
+// te izracunava umnozak:
+//	U = sin(1)/cos(1) * (sin(1)+sin(2))/(cos(1)+cos(2)) * ...
+
+int main() {
+	int n;
+	float U = 1, brojnik = 0, nazivnik = 0;
+	do {
+		cout << "Unesite n: " << endl;
+		cin >> n;
+	}
+	while (n < 1);
+
+	for (i = 1; i <= n; i++) {
+		brojnik += sin(i);
+		nazivnik += cos(i);
+		U *= brojnik / nazivnik;
+	}
+
+	cout << "Rjesenje iznosi: " << U << endl;
+	
+	return 0;
+	system("pause=0");
+}
